@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.smartcarseat.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_voice"
+        android:name="com.example.smartcarseat.ui.voice.VoiceFragment"
+        android:label="@string/menu_voice"
+        tools:layout="@layout/fragment_voice" />
+
+    <fragment
+        android:id="@+id/nav_direction"
+        android:name="com.example.smartcarseat.ui.direction.DirectionFragment"
+        android:label="@string/menu_direction"
+        tools:layout="@layout/fragment_direction" />
+
+    <fragment
+        android:id="@+id/nav_sleep"
+        android:name="com.example.smartcarseat.ui.sleep.SleepFragment"
+        android:label="@string/menu_sleep"
+        tools:layout="@layout/fragment_sleep"/>
+
+    <fragment
+        android:id="@+id/nav_monitoring"
+        android:name="com.example.smartcarseat.ui.monitoring.MonitoringFragment"
+        android:label="@string/menu_monitoring"
+        tools:layout="@layout/fragment_monitoring" />
+</navigation>
